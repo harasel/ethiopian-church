@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gishen Mariam Monastery & Church | Ethiopian Orthodox Tewahedo — Shasta County, CA</title>
+<meta name="description" content="Gishen Mariam Monastery & Church — an Ethiopian Orthodox Tewahedo sacred place of prayer, worship, community and service in Shasta County, California." />
+<meta name="theme-color" content="#5B0F1A" />
+<meta property="og:title" content="Gishen Mariam Monastery & Church" />
+<meta property="og:description" content="A Sacred Place of Prayer, Worship, Community & Service. Ethiopian Orthodox Tewahedo Monastery in Shasta County, California." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* =========================================================
+   Gishen Mariam Monastery & Church
+   Ethiopian Orthodox Tewahedo — Shasta County, CA
+   Sacred, traditional, monastic visual identity.
+   ========================================================= */
+
+:root{
+  --burgundy:#5B0F1A;
+  --burgundy-deep:#3d0a12;
+  --gold:#D4AF37;
+  --gold-soft:#E6C868;
+  --gold-deep:#9c7d22;
+  --green:#1F4D3A;
+  --green-deep:#143526;
+  --navy:#0E2238;
+  --navy-deep:#06121f;
+  --ivory:#F7F2E8;
+  --ivory-soft:#fbf8f1;
+  --ink:#1a1410;
+  --muted:#6b5e4d;
+  --line: rgba(212,175,55,.35);
+  --shadow: 0 18px 50px rgba(14,34,56,.18);
+  --radius: 4px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--ivory);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+h1,h2,h3,h4{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.04em;color:var(--burgundy)}
+.serif{font-family:'Cormorant Garamond',serif}
+
+.container{width:min(1200px, 92%);margin:0 auto}
+
+/* ---------- Decorative Ornaments ---------- */
+.ornament{
+  display:flex;align-items:center;justify-content:center;
+  gap:1rem;color:var(--gold);margin:0 auto;
+}
+.ornament .line{flex:1;max-width:120px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.ornament .diamond{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.ornament svg{width:28px;height:28px;fill:var(--gold)}
+
+.section-title{
+  text-align:center;font-size:clamp(1.7rem,3.2vw,2.6rem);
+  margin:1rem 0 .5rem;
+}
+.section-kicker{
+  text-align:center;font-family:'Cormorant Garamond',serif;
+  font-style:italic;color:var(--green);font-size:1.15rem;letter-spacing:.08em;
+}
+.section-sub{text-align:center;color:var(--muted);max-width:680px;margin:1rem auto 3rem}
+
+/* ---------- Ethiopian Orthodox Cross (SVG inline asset) ---------- */
+.eo-cross{display:inline-block}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  padding:.95rem 2rem;font-family:'Cinzel',serif;font-weight:600;
+  font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;
+  border-radius:var(--radius);transition:all .35s ease;
+  border:1.5px solid transparent;
+}
+.btn-primary{background:var(--gold);color:var(--burgundy);box-shadow:0 8px 24px rgba(212,175,55,.35)}
+.btn-primary:hover{background:var(--gold-soft);transform:translateY(-2px);box-shadow:0 14px 30px rgba(212,175,55,.5)}
+.btn-outline{border-color:var(--gold);color:var(--ivory)}
+.btn-outline:hover{background:var(--gold);color:var(--burgundy)}
+.btn-dark{background:var(--burgundy);color:var(--ivory)}
+.btn-dark:hover{background:var(--burgundy-deep)}
+
+/* ========================================================
+   HEADER
+   ======================================================== */
+.topbar{
+  background:var(--burgundy-deep);color:var(--ivory);
+  font-size:.78rem;padding:.5rem 0;letter-spacing:.12em;
+  border-bottom:1px solid rgba(212,175,55,.25);
+}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.topbar a:hover{color:var(--gold)}
+
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:var(--ivory);
+  border-bottom:1px solid var(--line);
+  transition:all .3s ease;
+}
+.site-header.scrolled{
+  background:rgba(247,242,232,.97);
+  backdrop-filter:blur(8px);
+  box-shadow:0 4px 20px rgba(14,34,56,.08);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;gap:1rem}
+.brand{display:flex;align-items:center;gap:.9rem;min-width:0}
+.brand-cross{width:46px;height:46px;flex-shrink:0;color:var(--gold);
+  background:var(--burgundy);border-radius:50%;padding:6px;
+  box-shadow:0 4px 12px rgba(91,15,26,.3);
+}
+.brand-text{display:flex;flex-direction:column;min-width:0}
+.brand-name{font-family:'Cinzel',serif;font-weight:700;color:var(--burgundy);font-size:1.05rem;letter-spacing:.06em;line-height:1.1}
+.brand-sub{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--green);font-size:.85rem;letter-spacing:.05em}
+
+.main-nav ul{display:flex;list-style:none;gap:.3rem;align-items:center}
+.main-nav a{
+  display:inline-block;padding:.6rem .9rem;font-size:.8rem;
+  font-family:'Cinzel',serif;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink);position:relative;
+  transition:color .25s;
+}
+.main-nav a::after{
+  content:"";position:absolute;left:50%;bottom:.3rem;
+  width:0;height:1px;background:var(--gold);transition:all .3s ease;transform:translateX(-50%);
+}
+.main-nav a:hover{color:var(--burgundy)}
+.main-nav a:hover::after{width:60%}
+.nav-donate{margin-left:.5rem;padding:.6rem 1.2rem !important;background:var(--burgundy);color:var(--ivory) !important;border-radius:var(--radius);}
+.nav-donate:hover{background:var(--burgundy-deep);color:var(--gold) !important}
+.nav-donate::after{display:none}
+
+.menu-toggle{display:none;width:42px;height:42px;color:var(--burgundy)}
+.menu-toggle svg{width:28px;height:28px}
+
+/* ========================================================
+   HERO
+   ======================================================== */
+.hero{
+  position:relative;min-height:92vh;display:flex;align-items:center;
+  color:var(--ivory);overflow:hidden;
+  background:
+    linear-gradient(135deg, rgba(14,34,56,.85) 0%, rgba(91,15,26,.72) 60%, rgba(31,77,58,.7) 100%),
+    url('https://images.unsplash.com/photo-1548407260-da850faa41e3?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,.5) 100%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:8rem 0;width:min(900px,92%);margin:0 auto}
+.hero-cross{width:70px;height:70px;color:var(--gold);margin:0 auto 1.5rem;opacity:0;animation:fadeUp 1s .1s forwards}
+.hero-kicker{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  color:var(--gold-soft);font-size:1.3rem;letter-spacing:.25em;
+  text-transform:uppercase;margin-bottom:1.2rem;opacity:0;animation:fadeUp 1s .3s forwards;
+}
+.hero h1{
+  color:var(--ivory);font-size:clamp(2rem,5vw,4rem);line-height:1.15;
+  margin-bottom:1.5rem;text-shadow:0 4px 30px rgba(0,0,0,.5);
+  opacity:0;animation:fadeUp 1s .5s forwards;
+}
+.hero h1 span{color:var(--gold);font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:500}
+.hero p.lead{
+  font-family:'Cormorant Garamond',serif;font-size:1.4rem;
+  color:var(--ivory);opacity:0;animation:fadeUp 1s .7s forwards;
+  max-width:600px;margin:0 auto 2.5rem;font-style:italic;
+}
+.hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:fadeUp 1s .9s forwards}
+
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:var(--gold);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-family:'Cinzel',serif;opacity:.8}
+.hero-scroll::after{content:"";display:block;width:1px;height:30px;background:var(--gold);margin:.6rem auto 0;animation:scrollPulse 2s ease-in-out infinite}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scrollPulse{0%,100%{opacity:.3;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
+
+/* ========================================================
+   GENERIC SECTION
+   ======================================================== */
+section{padding:6rem 0;position:relative}
+
+/* ========================================================
+   MISSION CARDS
+   ======================================================== */
+.mission{background:var(--ivory-soft)}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem}
+.mcard{
+  background:#fff;border:1px solid var(--line);
+  padding:2.2rem 1.5rem;text-align:center;border-radius:var(--radius);
+  position:relative;transition:all .4s ease;
+  box-shadow:0 4px 14px rgba(14,34,56,.06);
+}
+.mcard::before{
+  content:"";position:absolute;inset:0;border:1px solid transparent;
+  background:linear-gradient(135deg, var(--gold), transparent, var(--gold)) border-box;
+  -webkit-mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  opacity:0;transition:opacity .4s;border-radius:var(--radius);
+}
+.mcard:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.mcard:hover::before{opacity:1}
+.mcard-icon{
+  width:70px;height:70px;margin:0 auto 1.2rem;
+  border:1.5px solid var(--gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold);background:var(--ivory-soft);
+  transition:all .4s;
+}
+.mcard:hover .mcard-icon{background:var(--burgundy);color:var(--gold);border-color:var(--burgundy)}
+.mcard-icon svg{width:32px;height:32px}
+.mcard h3{font-size:1.05rem;margin-bottom:.7rem;letter-spacing:.08em}
+.mcard p{font-size:.92rem;color:var(--muted);line-height:1.6}
+
+/* ========================================================
+   SCRIPTURE
+   ======================================================== */
+.scripture{
+  background:
+    linear-gradient(135deg, rgba(20,53,38,.95), rgba(14,34,56,.92)),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><path d='M30 5l5 10h10l-8 7 3 11-10-6-10 6 3-11-8-7h10z' fill='%23D4AF37' opacity='.04'/></svg>");
+  color:var(--ivory);position:relative;
+}
+.scripture::before,.scripture::after{
+  content:"";position:absolute;left:0;right:0;height:6px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.scripture::before{top:0}.scripture::after{bottom:0}
+.scripture-inner{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
+.scripture-cross{width:170px;height:170px;color:var(--gold);flex-shrink:0;
+  filter:drop-shadow(0 6px 24px rgba(212,175,55,.4));
+}
+.scripture-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.4;color:var(--ivory)}
+.scripture-quote::before{content:"\201C";font-size:4rem;color:var(--gold);line-height:0;vertical-align:-.4em;margin-right:.3rem;font-family:'Cinzel',serif}
+.scripture-ref{
+  margin-top:1.5rem;font-family:'Cinzel',serif;letter-spacing:.25em;
+  color:var(--gold);font-size:.85rem;text-transform:uppercase;
+}
+.scripture-ref::before{content:"— "}
+
+/* ========================================================
+   ABOUT
+   ======================================================== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:2rem}
+.about-img{position:relative}
+.about-img img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover}
+.about-img::before{
+  content:"";position:absolute;top:-18px;left:-18px;right:18px;bottom:18px;
+  border:2px solid var(--gold);border-radius:var(--radius);z-index:-1;
+}
+.about-text h2{text-align:left;font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:1rem}
+.about-text .ornament{justify-content:flex-start;margin:0 0 1.5rem}
+.about-text .ornament .line{max-width:80px}
+.about-text p{color:var(--muted);margin-bottom:1.1rem}
+.about-text .accent{color:var(--burgundy);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem}
+
+/* ========================================================
+   GALLERY
+   ======================================================== */
+.gallery{background:var(--ivory-soft)}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:1rem;margin-top:2rem;
+}
+.gitem{
+  position:relative;overflow:hidden;border-radius:var(--radius);
+  border:1px solid var(--line);cursor:pointer;
+}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gitem::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(91,15,26,.85));
+  opacity:0;transition:opacity .4s;
+}
+.gitem-label{
+  position:absolute;bottom:1rem;left:1rem;right:1rem;color:var(--ivory);
+  font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+  z-index:2;transform:translateY(10px);opacity:0;transition:all .4s;
+}
+.gitem:hover img{transform:scale(1.08)}
+.gitem:hover::after{opacity:1}
+.gitem:hover .gitem-label{opacity:1;transform:translateY(0)}
+.gitem.wide{grid-column:span 2}
+.gitem.tall{grid-row:span 2}
+
+/* ========================================================
+   DONATION
+   ======================================================== */
+.donate{
+  background:linear-gradient(135deg,var(--burgundy) 0%,var(--burgundy-deep) 50%,var(--navy) 100%);
+  color:var(--ivory);text-align:center;position:relative;overflow:hidden;
+}
+.donate::before{
+  content:"";position:absolute;inset:0;opacity:.08;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><path d='M40 10v60M10 40h60M40 20l-8 8M40 20l8 8M40 60l-8-8M40 60l8-8M20 40l8-8M20 40l8 8M60 40l-8-8M60 40l-8 8' stroke='%23D4AF37' stroke-width='1' fill='none'/></svg>");
+}
+.donate-inner{position:relative;z-index:2}
+.donate h2{color:var(--ivory);font-size:clamp(1.9rem,3.5vw,2.8rem)}
+.donate .ornament{margin:1.5rem auto}
+.donate-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;max-width:680px;margin:1rem auto 3rem;color:var(--ivory);opacity:.92}
+.give-options{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:900px;margin:0 auto 3rem}
+.give-card{
+  background:rgba(255,255,255,.05);border:1px solid rgba(212,175,55,.3);
+  padding:1.8rem 1.2rem;border-radius:var(--radius);
+  transition:all .3s;backdrop-filter:blur(6px);
+}
+.give-card:hover{border-color:var(--gold);background:rgba(212,175,55,.08);transform:translateY(-4px)}
+.give-card svg{width:38px;height:38px;color:var(--gold);margin:0 auto 1rem}
+.give-card h4{font-family:'Cinzel',serif;color:var(--gold);font-size:.95rem;letter-spacing:.12em;margin-bottom:.4rem}
+.give-card p{font-size:.88rem;opacity:.85}
+.donate-btn{padding:1.2rem 3rem;font-size:.95rem}
+
+/* ========================================================
+   EVENTS
+   ======================================================== */
+.events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2rem}
+.event{
+  background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);
+  padding:1.8rem;border-radius:var(--radius);transition:all .3s;
+  display:flex;gap:1.2rem;
+}
+.event:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-left-color:var(--burgundy)}
+.event-date{
+  flex-shrink:0;text-align:center;
+  background:var(--burgundy);color:var(--gold);
+  padding:.8rem .9rem;border-radius:var(--radius);min-width:72px;
+}
+.event-date .d{font-family:'Cinzel',serif;font-size:1.6rem;font-weight:700;line-height:1;color:var(--ivory)}
+.event-date .m{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-top:.3rem;font-family:'Cinzel',serif}
+.event-body h3{font-size:1rem;margin-bottom:.4rem;letter-spacing:.06em}
+.event-body p{font-size:.88rem;color:var(--muted);line-height:1.55}
+.event-meta{display:flex;align-items:center;gap:.4rem;margin-top:.6rem;font-size:.78rem;color:var(--green);font-family:'Cinzel',serif;letter-spacing:.1em;text-transform:uppercase}
+
+/* ========================================================
+   CONTACT
+   ======================================================== */
+.contact{background:var(--ivory-soft)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.cinfo-card{
+  background:#fff;padding:1.5rem;border:1px solid var(--line);border-radius:var(--radius);
+  display:flex;gap:1rem;align-items:flex-start;
+}
+.cinfo-card svg{width:36px;height:36px;color:var(--gold);flex-shrink:0;padding:6px;border:1px solid var(--gold);border-radius:50%}
+.cinfo-card h4{font-size:.9rem;letter-spacing:.12em;margin-bottom:.3rem}
+.cinfo-card p{color:var(--muted);font-size:.92rem}
+.map{
+  margin-top:1rem;height:200px;border-radius:var(--radius);
+  border:1px solid var(--line);overflow:hidden;
+  background:linear-gradient(135deg,var(--green),var(--navy));
+  display:flex;align-items:center;justify-content:center;color:var(--gold);
+  font-family:'Cinzel',serif;letter-spacing:.18em;font-size:.8rem;text-align:center;
+  position:relative;
+}
+.map::before{
+  content:"";position:absolute;inset:0;opacity:.15;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M0 20h40M20 0v40' stroke='%23D4AF37' stroke-width='.5'/></svg>");
+}
+.map span{position:relative;z-index:2}
+
+.contact-form{background:#fff;padding:2.2rem;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 4px 14px rgba(14,34,56,.06)}
+.contact-form h3{font-size:1.2rem;margin-bottom:1.5rem;color:var(--burgundy)}
+.field{margin-bottom:1.2rem}
+.field label{display:block;font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
+.field input,.field textarea{
+  width:100%;padding:.85rem 1rem;border:1px solid var(--line);
+  background:var(--ivory-soft);font-family:'Inter',sans-serif;font-size:.95rem;
+  border-radius:var(--radius);transition:border .3s;color:var(--ink);
+}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff}
+.field textarea{min-height:130px;resize:vertical}
+.form-msg{margin-top:1rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--green);min-height:1.4em}
+
+/* ========================================================
+   FOOTER
+   ======================================================== */
+.site-footer{
+  background:var(--navy-deep);color:var(--ivory);
+  padding:4rem 0 1.5rem;position:relative;
+}
+.site-footer::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--burgundy),var(--gold),var(--green),var(--gold),var(--burgundy));
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer-brand{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+.footer-brand svg{width:50px;height:50px;color:var(--gold);flex-shrink:0}
+.footer-brand .name{font-family:'Cinzel',serif;font-weight:700;color:var(--gold);font-size:1rem;letter-spacing:.08em;line-height:1.2}
+.footer-brand .sub{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory);opacity:.7;font-size:.95rem;margin-top:.3rem}
+.footer p.about{font-size:.88rem;line-height:1.7;opacity:.78}
+.footer h5{font-family:'Cinzel',serif;color:var(--gold);font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid rgba(212,175,55,.2)}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:.6rem}
+.footer ul a{font-size:.9rem;opacity:.8;transition:all .25s}
+.footer ul a:hover{color:var(--gold);opacity:1;padding-left:.4rem}
+.footer-contact p{font-size:.88rem;opacity:.8;margin-bottom:.6rem;display:flex;gap:.6rem;align-items:flex-start}
+.footer-contact svg{width:16px;height:16px;color:var(--gold);flex-shrink:0;margin-top:4px}
+
+.footer-bottom{
+  border-top:1px solid rgba(212,175,55,.18);padding-top:1.5rem;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:.8rem;opacity:.7;flex-wrap:wrap;gap:1rem;
+}
+.footer-bottom .ornament{margin:0}
+.footer-bottom .ornament .line{max-width:50px}
+
+/* ========================================================
+   REVEAL ANIMATIONS
+   ======================================================== */
+.reveal{opacity:0;transform:translateY(30px);transition:all .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+
+/* ========================================================
+   RESPONSIVE
+   ======================================================== */
+@media (max-width: 980px){
+  .main-nav{
+    position:fixed;top:0;right:-100%;width:min(320px,85%);height:100vh;
+    background:var(--burgundy-deep);padding:5rem 2rem 2rem;
+    transition:right .4s ease;box-shadow:-10px 0 40px rgba(0,0,0,.3);z-index:99;
+  }
+  .main-nav.open{right:0}
+  .main-nav ul{flex-direction:column;align-items:stretch;gap:0}
+  .main-nav a{color:var(--ivory);padding:1rem 0;border-bottom:1px solid rgba(212,175,55,.15);display:block}
+  .nav-donate{margin:1rem 0 0 !important;text-align:center}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;z-index:101;position:relative}
+
+  .scripture-inner{grid-template-columns:1fr;text-align:center;gap:2rem}
+  .scripture-cross{margin:0 auto;width:120px;height:120px}
+
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .about-text h2{text-align:center}
+  .about-text .ornament{justify-content:center}
+
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+  .gitem.wide{grid-column:span 1}
+  .gitem.tall{grid-row:span 1}
+
+  .give-options{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media (max-width:560px){
+  section{padding:4rem 0}
+  .hero-inner{padding:6rem 0}
+  .topbar{font-size:.7rem}
+  .topbar-inner{justify-content:center;text-align:center}
+  .brand-name{font-size:.95rem}
+  .brand-sub{font-size:.78rem}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .event{flex-direction:column}
+  .gallery-grid{grid-auto-rows:140px;gap:.6rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ================== TOP UTILITY BAR ================== -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>✦ Ethiopian Orthodox Tewahedo &nbsp;|&nbsp; Shasta County, California</span>
+    <span><a href="#contact">Visit Us</a> &nbsp;·&nbsp; <a href="#donate">Support the Monastery</a></span>
+  </div>
+</div>
+
+<!-- ================== HEADER ================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand" aria-label="Gishen Mariam Monastery and Church">
+      <!-- Ethiopian Orthodox Cross emblem -->
+      <svg class="brand-cross" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.2" opacity=".6"/>
+        <path d="M32 10v44M14 32h36" stroke-width="2.4"/>
+        <path d="M22 22l20 20M42 22L22 42" stroke-width="1.2" opacity=".75"/>
+        <circle cx="32" cy="32" r="5" fill="currentColor"/>
+        <path d="M32 14l-3 3 3 3 3-3zM32 50l-3-3 3-3 3 3zM14 32l3-3 3 3-3 3zM50 32l-3-3-3 3 3 3z" fill="currentColor" opacity=".9"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Gishen Mariam</span>
+        <span class="brand-sub">Monastery &amp; Church</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#scripture">Spiritual Life</a></li>
+        <li><a href="#events">Community</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#donate" class="nav-donate">Donate</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ================== HERO ================== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <svg class="hero-cross" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <path d="M32 4v56M8 32h48" stroke-width="2.4"/>
+      <path d="M18 18l28 28M46 18L18 46" stroke-width="1.2"/>
+      <circle cx="32" cy="32" r="6" fill="currentColor"/>
+      <circle cx="32" cy="32" r="20" stroke="currentColor" opacity=".5"/>
+      <path d="M32 8l-4 4 4 4 4-4zM32 56l-4-4 4-4 4 4zM8 32l4-4 4 4-4 4zM56 32l-4-4-4 4 4 4z" fill="currentColor"/>
+    </svg>
+    <div class="hero-kicker">✦ Gishen Mariam ✦</div>
+    <h1>A Sacred Place of <span>Prayer, Worship,</span><br/>Community &amp; Service</h1>
+    <p class="lead">"Growing in Faith. Serving with Love."</p>
+    <div class="hero-cta">
+      <a href="#donate" class="btn btn-primary">Donate Now →</a>
+      <a href="#about" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ================== MISSION CARDS ================== -->
+<section class="mission" id="mission">
+  <div class="container">
+    <div class="ornament reveal">
+      <span class="line"></span>
+      <svg viewBox="0 0 24 24"><path d="M12 2l2 6h6l-5 4 2 7-7-4-7 4 2-7-5-4h6z"/></svg>
+      <span class="line"></span>
+    </div>
+    <p class="section-kicker reveal">Our Foundations</p>
+    <h2 class="section-title reveal">Faith, Worship &amp; Service</h2>
+    <p class="section-sub reveal">Five pillars rooted in the ancient Ethiopian Orthodox Tewahedo tradition that shape life and ministry at our monastery.</p>
+
+    <div class="cards-grid">
+      <article class="mcard reveal">
+        <div class="mcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M5 9h14M7 5l10 14M17 5L7 19"/></svg></div>
+        <h3>Our Mission</h3>
+        <p>To preserve the sacred faith of the Ethiopian Orthodox Tewahedo Church and pass it on to future generations.</p>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 6 10 6 14a6 6 0 0012 0c0-4-2-8-6-12z"/><path d="M12 14v6"/></svg></div>
+        <h3>Spiritual Life</h3>
+        <p>Daily Divine Liturgy, fasting, holy sacraments, and the ancient prayers of the Church guide our devotion.</p>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M14 20c0-2 2-4 5-4s5 2 5 4"/></svg></div>
+        <h3>Community Service</h3>
+        <p>Serving the poor, the sick, and the lonely — practicing Christian love through hospitality and mercy.</p>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h12a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/><path d="M4 4l16 16M8 8h8M8 12h6"/></svg></div>
+        <h3>Culture &amp; Heritage</h3>
+        <p>Honoring Ethiopian Christian heritage, sacred music, Ge'ez liturgy, and the writings of the Holy Fathers.</p>
+      </article>
+      <article class="mcard reveal">
+        <div class="mcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9C.5 8 3 4 7 4c2 0 4 1 5 3 1-2 3-3 5-3 4 0 6.5 4 4.5 8C19 16.5 12 21 12 21z"/></svg></div>
+        <h3>Give &amp; Support</h3>
+        <p>Your generosity sustains the monastery, supports clergy, and grows the spiritual home of our community.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SCRIPTURE ================== -->
+<section class="scripture" id="scripture">
+  <div class="container scripture-inner reveal">
+    <svg class="scripture-cross" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <circle cx="32" cy="32" r="28" stroke-width="1"/>
+      <circle cx="32" cy="32" r="22" stroke-width=".7" opacity=".5"/>
+      <path d="M32 4v56M4 32h56" stroke-width="2.5"/>
+      <path d="M14 14l36 36M50 14L14 50" stroke-width="1"/>
+      <circle cx="32" cy="32" r="7" fill="currentColor"/>
+      <circle cx="32" cy="32" r="2" fill="#0E2238"/>
+      <path d="M32 6l-4 4 4 4 4-4zM32 58l-4-4 4-4 4 4zM6 32l4-4 4 4-4 4zM58 32l-4-4-4 4 4 4z" fill="currentColor"/>
+      <path d="M18 8l-2 4M46 8l2 4M18 56l-2-4M46 56l2-4" stroke-width=".8"/>
+    </svg>
+    <div>
+      <blockquote class="scripture-quote">But as for me and my house, we will serve the Lord.</blockquote>
+      <div class="scripture-ref">Joshua 24:15</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== ABOUT ================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="ornament reveal"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+    <p class="section-kicker reveal">About the Monastery</p>
+    <h2 class="section-title reveal">A House of Prayer in Northern California</h2>
+
+    <div class="about-grid">
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=900&q=80" alt="Ethiopian Orthodox monastery interior with traditional iconography" loading="lazy"/>
+      </div>
+      <div class="about-text reveal">
+        <div class="ornament"><span class="line"></span><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2 6h6l-5 4 2 7-7-4-7 4 2-7-5-4h6z"/></svg><span class="line"></span></div>
+        <h2>Rooted in Ancient Faith</h2>
+        <p class="accent">Gishen Mariam Monastery &amp; Church stands as a sacred sanctuary in the hills of Shasta County, carrying forward the unbroken witness of the Ethiopian Orthodox Tewahedo Church.</p>
+        <p>For over seventeen centuries, our tradition has preserved the apostolic faith through prayer, fasting, sacred liturgy, and monastic life. Here in California, we continue that legacy — offering a spiritual home for the Ethiopian community and all who seek the living God.</p>
+        <p>Our clergy and monastics dedicate their lives to worship, intercession, and service. Through Divine Liturgy, the holy sacraments, and acts of mercy, we strive to grow in holiness and serve our neighbors with the love of Christ.</p>
+        <a href="#mission" class="btn btn-dark" style="margin-top:1rem">Read More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== GALLERY ================== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="ornament reveal"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+    <p class="section-kicker reveal">Sacred Moments</p>
+    <h2 class="section-title reveal">From Our Monastery</h2>
+    <p class="section-sub reveal">Glimpses of worship, fellowship, and the timeless beauty of the Ethiopian Orthodox tradition.</p>
+
+    <div class="gallery-grid reveal">
+      <div class="gitem wide tall">
+        <img src="https://images.unsplash.com/photo-1548407260-da850faa41e3?auto=format&fit=crop&w=900&q=80" alt="Ethiopian Orthodox church exterior" loading="lazy"/>
+        <span class="gitem-label">The Church</span>
+      </div>
+      <div class="gitem">
+        <img src="https://saintpaulseminary.org/wp-content/uploads/2025/04/Eucharistic-prayer-during-Mass-at-seminary.jpg" alt="Sacred liturgy and worship" loading="lazy"/>
+        <span class="gitem-label">Divine Liturgy</span>
+      </div>
+      <div class="gitem">
+        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80" alt="Monastic prayer and devotion" loading="lazy"/>
+        <span class="gitem-label">Monastic Life</span>
+      </div>
+      <div class="gitem">
+        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=600&q=80" alt="Candles and prayer" loading="lazy"/>
+        <span class="gitem-label">Holy Candles</span>
+      </div>
+      <div class="gitem">
+        <img src="https://images.squarespace-cdn.com/content/v1/668ea336ae58a26425de3592/b7d8f6e9-4544-45ba-b6ac-a1e5cde2bce3/church-service-stained-glass-fellowship-community.jpg.jpg" alt="Community gathering and fellowship" loading="lazy"/>
+        <span class="gitem-label">Community</span>
+      </div>
+      <div class="gitem wide">
+        <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=900&q=80" alt="Ethiopian Orthodox icons and tradition" loading="lazy"/>
+        <span class="gitem-label">Sacred Heritage</span>
+      </div>
+      <div class="gitem">
+        <img src="https://www.cssr.news/wp-content/uploads/2016/06/IMG_7702.jpg" alt="Feast day celebration" loading="lazy"/>
+        <span class="gitem-label">Feast Days</span>
+      </div>
+      <div class="gitem">
+        <img src="https://images.squarespace-cdn.com/content/v1/668ea336ae58a26425de3592/233cd745-a757-4130-a8c7-2290096e3647/the-fellowship-community-gathering-2.jpg" alt="National gathering" loading="lazy"/>
+        <span class="gitem-label">Feast Days</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== DONATE ================== -->
+<section class="donate" id="donate">
+  <div class="container donate-inner reveal">
+    <p class="section-kicker" style="color:var(--gold-soft)">✦ Be Part of Something Sacred ✦</p>
+    <h2>Support Our Monastery &amp; Church</h2>
+    <div class="ornament"><span class="line"></span><svg viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2l2 6h6l-5 4 2 7-7-4-7 4 2-7-5-4h6z"/></svg><span class="line"></span></div>
+    <p class="donate-text">"Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver." Your generosity sustains daily worship, supports our clergy and monastics, and helps us grow as a spiritual home for the community.</p>
+
+    <div class="give-options">
+      <div class="give-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg>
+        <h4>One-Time Giving</h4>
+        <p>Make a single offering of any amount toward our ministry.</p>
+      </div>
+      <div class="give-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>
+        <h4>Monthly Support</h4>
+        <p>Become a steward — sustain the monastery month by month.</p>
+      </div>
+      <div class="give-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+        <h4>Church Development</h4>
+        <p>Help build and expand the sacred home of Gishen Mariam.</p>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-primary donate-btn">✦ Donate Now ✦</a>
+  </div>
+</section>
+
+<!-- ================== EVENTS ================== -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="ornament reveal"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+    <p class="section-kicker reveal">Upcoming Gatherings</p>
+    <h2 class="section-title reveal">Worship &amp; Community</h2>
+    <p class="section-sub reveal">Join us in prayer, fellowship, and celebration of the great feasts of the Church.</p>
+
+    <div class="events-grid">
+      <article class="event reveal">
+        <div class="event-date"><div class="d">28</div><div class="m">Sun</div></div>
+        <div class="event-body">
+          <h3>Divine Liturgy (Qiddase)</h3>
+          <p>Weekly celebration of the Holy Eucharist in the ancient Ge'ez tradition.</p>
+          <div class="event-meta">✦ Every Sunday · 7:00 AM</div>
+        </div>
+      </article>
+      <article class="event reveal">
+        <div class="event-date"><div class="d">11</div><div class="m">Jan</div></div>
+        <div class="event-body">
+          <h3>Feast of Timket (Epiphany)</h3>
+          <p>The great celebration of the Baptism of Our Lord with blessing of waters.</p>
+          <div class="event-meta">✦ Major Feast Day</div>
+        </div>
+      </article>
+      <article class="event reveal">
+        <div class="event-date"><div class="d">15</div><div class="m">Sat</div></div>
+        <div class="event-body">
+          <h3>Youth Spiritual Program</h3>
+          <p>Faith education, Ge'ez language, and fellowship for the next generation.</p>
+          <div class="event-meta">✦ Saturdays · 10:00 AM</div>
+        </div>
+      </article>
+      <article class="event reveal">
+        <div class="event-date"><div class="d">21</div><div class="m">Mon</div></div>
+        <div class="event-body">
+          <h3>Feast of St. Mary (Gishen)</h3>
+          <p>Annual pilgrimage and celebration honoring the Holy Theotokos of Gishen.</p>
+          <div class="event-meta">✦ Patronal Feast</div>
+        </div>
+      </article>
+      <article class="event reveal">
+        <div class="event-date"><div class="d">05</div><div class="m">Fri</div></div>
+        <div class="event-body">
+          <h3>Community Service Day</h3>
+          <p>Serving meals and care packages to neighbors in need across Shasta County.</p>
+          <div class="event-meta">✦ Monthly Outreach</div>
+        </div>
+      </article>
+      <article class="event reveal">
+        <div class="event-date"><div class="d">07</div><div class="m">Jan</div></div>
+        <div class="event-body">
+          <h3>Genna — Ethiopian Nativity</h3>
+          <p>All-night vigil and Divine Liturgy celebrating the Birth of Our Lord.</p>
+          <div class="event-meta">✦ Major Feast Day</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================== CONTACT ================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="ornament reveal"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+    <p class="section-kicker reveal">Visit &amp; Connect</p>
+    <h2 class="section-title reveal">Come and See</h2>
+    <p class="section-sub reveal">All are welcome. Reach out, plan a visit, or send us a message of prayer.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="cinfo-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-7-7-12a7 7 0 1114 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div><h4>Address</h4><p>Gishen Mariam Monastery<br/>Shasta County, California<br/><em>Full address provided upon visit</em></p></div>
+        </div>
+        <div class="cinfo-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.5 2.6a2 2 0 01-.5 2L8 9.6a16 16 0 006 6l1.3-1.3a2 2 0 012-.5c.8.3 1.7.4 2.6.5a2 2 0 011.7 2z"/></svg>
+          <div><h4>Phone</h4><p>(530) 000-0000<br/><em>Available during office hours</em></p></div>
+        </div>
+        <div class="cinfo-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+          <div><h4>Email</h4><p>info@gishenmariam.org<br/><em>We respond within 48 hours</em></p></div>
+        </div>
+        <div class="map" aria-label="Map location placeholder"><span>✦ Shasta County, California ✦<br/>Map Location</span></div>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="return handleContact(event)">
+        <h3>Send Us a Message</h3>
+        <div class="field"><label for="cname">Name</label><input id="cname" type="text" required placeholder="Your full name"/></div>
+        <div class="field"><label for="cemail">Email</label><input id="cemail" type="email" required placeholder="you@example.com"/></div>
+        <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" required placeholder="Share your message, prayer request, or question..."></textarea></div>
+        <button type="submit" class="btn btn-dark" style="width:100%">Send Message →</button>
+        <p class="form-msg" id="formMsg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer class="site-footer footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="32" cy="32" r="28" stroke-width="1" opacity=".6"/>
+            <path d="M32 8v48M8 32h48" stroke-width="2.4"/>
+            <path d="M18 18l28 28M46 18L18 46" stroke-width="1"/>
+            <circle cx="32" cy="32" r="5" fill="currentColor"/>
+          </svg>
+          <div>
+            <div class="name">Gishen Mariam</div>
+            <div class="sub">Monastery &amp; Church</div>
+          </div>
+        </div>
+        <p class="about">An Ethiopian Orthodox Tewahedo monastery in Shasta County, California — preserving the ancient faith, serving the community, and growing in love.</p>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#scripture">Spiritual Life</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#donate">Monthly Giving</a></li>
+          <li><a href="#events">Volunteer</a></li>
+          <li><a href="#contact">Visit Us</a></li>
+          <li><a href="#contact">Prayer Requests</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-7-7-12a7 7 0 1114 0c0 5-7 12-7 12z"/></svg> Shasta County, California</p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7"/></svg> (530) 000-0000</p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg> info@gishenmariam.org</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="yr"></span> Gishen Mariam Monastery &amp; Church. All rights reserved.</div>
+      <div class="ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+      <div>Glory to God · ስብሐት ለእግዚአብሔር</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   Sticky header shadow + mobile menu toggle
+   ========================================================= */
+const header = document.getElementById('siteHeader');
+const nav = document.getElementById('mainNav');
+const toggle = document.getElementById('menuToggle');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 30);
+}, { passive: true });
+
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+
+// Close mobile menu when a link is clicked
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+}));
+
+/* =========================================================
+   IntersectionObserver — gentle reveal animations
+   ========================================================= */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target);} });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* =========================================================
+   Contact form — graceful demo handler
+   ========================================================= */
+function handleContact(e){
+  e.preventDefault();
+  const msg = document.getElementById('formMsg');
+  msg.textContent = 'Thank you — your message has been received. May God bless you.';
+  e.target.reset();
+  setTimeout(()=>{ msg.textContent=''; }, 6000);
+  return false;
+}
+
+/* Year in footer */
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
